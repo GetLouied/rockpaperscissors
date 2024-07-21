@@ -1,3 +1,5 @@
+
+// Get randomly generated choice of rock, paper, or scissors.
 function getComputerChoice () {
     const randomNumber = () => {
         return Math.floor(Math.random() * (3 - 1 + 1) + 1)
@@ -16,4 +18,10 @@ function getComputerChoice () {
             return "scissors";
             break;
     }
+}
+
+// Get the human choice for rock, paper, scissors.
+
+function getUserchoice() {
+    return prompt("Rock, Paper, or Scissors", "").toLowerCase()
 }
