@@ -1,0 +1,80 @@
+/* 
+Color Palette
+#DAD7CD
+#A3B18A
+#588157
+#3A5A40
+#344E41
+*/
+
+:root {
+    --main-bg-color: #A3B18A;
+    --secondary-color: #DAD7CD;
+    --tertiary-color: #588157;
+    --text-color: #344E80;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+#title-and-rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.rules {
+    display: flex;
+    justify-content: space-between;;
+    width: 100%;
+    max-width: 800px;
+}
+
+.rules p {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#game-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+#game-buttons button {
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--tertiary-color);
+    border-radius: 8px;
+    color: var(--main-bg-color);
+    padding: 10px 30px;
+}
+
+#reset {
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--tertiary-color);
+    border-radius: 8px;
+    color: var(--main-bg-color);
+    padding: 10px 30px;
+}
+
+#game-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+}

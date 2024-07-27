@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Rock Paper Scissors Game</title>
 </head>
 <body>
+
+    <div id="title-and-rules">
+        <h1>Rock, Paper, Scissors!</h1>
+        <img class="header-image" src="./images/rockpaperscissors.png" alt="rock paper scissors" width="1000px" height="400px">
+
+        <div class="rules">
+            <p>
+                Rock beats Scissors <br>
+                Scissors beats Paper <br>
+                Paper beats Rock. <br>
+            </p>
+            <p>
+                First to five wins takes it all <br>
+                Do you have what it takes?
+            </p>
+        </div>
+    </div>
+
+    <div id="game-stats">
+        <div id="user">
+            <p><strong>User: </strong> <span id="userStat">0</span></p>
+        </div>
+        <div id="computer">
+            <p><strong>Computer: </strong> <span id="computerStat">0</span></p>
+        </div>
+        <div id="ties">
+            <p><strong>Ties: </strong> <span id="tiesStat">0</span></p>
+        </div>
+        <div id="display">
+            <h4 id="resultDisplay">No Games Played!</h4>
+        </div>
+
+        <button id="reset" hidden>Reset Scores</button>
+
+    </div>
+
+    <div id="user-selection">
+        <div id="game-buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </div>
+
+
+
+    
+
+    <footer id="footer">
+        Louis DeRienzo - Odin Project - Copyright 2024
+    </footer>
 </body>
 </html>
